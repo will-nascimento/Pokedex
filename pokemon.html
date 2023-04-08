@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Links -->
+<link rel="icon" href="./favicons/favicon-16x16.png">
+<link rel="stylesheet" href="./css/style.css">
+
+<!-- Main JS -->
+<script defer src="./js/script.js"></script>
+
+<title>Pokédex</title>
+</head>
+<body>
+
+<main>
+<img src="#" alt="pokemon" class="pokemon__image">
+
+<h1 class="pokemon__data">
+<span class="pokemon__number"></span> -
+<span class="pokemon__name"></span>
+</h1>
+
+<form class="form" >
+<input
+    type="search"
+    id="input__pokemon"
+    class="input__search"
+    placeholder="Nome ou Número"
+    required
+    />
+</form>
+
+    <form class="form2" onsubmit="handle_form_pokemon();">
+
+<section class="pokemon-div-input">
+    <input
+    type="text"
+    class="input__pokemon flexMinor"
+    placeholder="Data Captura"
+    onfocus="(this.type='date')"
+    onblur="(this.type='text')"
+    />
+    <input
+    type="Number"
+    class="input__pokemon flexMajor"
+    placeholder="Pokebolas utilizadas"
+    
+/>
+</section>
+<section class="pokemon-div-input">
+    <select class="input__pokemon flexMinor">
+        <option disabled selected>Tipo</option>
+        <option>Normal</option>
+        <option>Fogo</option>
+        <option>Água</option>
+        <option>Ar</option>
+        <option>Planta</option>
+        <option>Elétrico</option>
+        <option>Gelo</option>
+    </select>
+    <input
+    type="Text"
+    class="input__pokemon flexMajor"
+    placeholder="Extra Info"
+    
+/>
+</section>
+</form>
+
+<form action="" onsubmit="handle_form_pokemon();">
+    <div class="buttons">
+        <div class="none">
+            <button class=" btn-prev"></button>
+            <button class=" btn-next"></button>
+        </div> 
+        <div class="btn-hor">
+            <button class="button" type="button"><a href="/index.html">&lt; PokeSearch </a></button>
+            <button class="button" type="submit"><a href="/pokemon.html">Capturar &uarr;    </a></button>
+        </div>
+    </div>
+</form>
+
+<img src="./images/pokedex.png" alt="pokedex" class="pokedex">
+</main>
+</body>
+</html>
